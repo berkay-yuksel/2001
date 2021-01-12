@@ -1,0 +1,273 @@
+@font-face{
+src: url(./NeueMontreal-Regular.otf);
+font-family: NeueMontreal-Regular;
+}
+*{
+    font-family: 'NeueMontreal-Regular';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none; 
+    overflow-x: hidden;
+    
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+body::-webkit-scrollbar-track {
+    background: #dddddd
+}
+a:-webkit-any-link {
+    color: #1f1f1f;
+   
+}
+.container{
+    background-color: #f4f4f4;
+    padding-top: 9rem;
+}
+.container2{
+    background-color: #f4f4f4;
+    padding-top: 5rem;
+}
+
+
+
+/* TABLE */
+.character{
+    font-weight: 400;
+}
+.cast_list{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100vw;
+}
+tr:hover{
+    background-color: #f1f1f1;
+}
+td, th {
+    font-weight: 700;
+    border-bottom: 1px solid #dddddd;
+    padding: 1rem;
+    width: 100vw;
+    font-size: 0.9rem;
+  }
+  td{
+      padding-right: 0rem;
+  }
+
+/*layout & stuff*/
+.youtube-video{
+    padding: 1.5rem;
+    text-align: center;
+}
+.img-show{
+    display: flex;
+justify-content: space-between;
+padding: 1rem 4rem;
+
+}
+.img-show img{
+    height: 300px;
+}
+
+
+.long-text{
+    padding: 0rem 4rem 0rem 4rem;
+    width: 100vw;
+   
+}
+
+.long-text h3{
+    padding: 0.4rem 0;
+}
+.long-text p{
+    width: 100%;
+    font-size: 0.8rem;
+    padding-bottom: 0.4rem;
+}
+.long-text2{
+    padding: 0rem 4rem 0rem 5rem;
+}
+.long-text2 p{
+    font-size: 0.8rem;
+    padding-bottom: 0.4rem;
+}
+
+h3{
+    font-size: 0.8rem;
+}
+
+.name,li{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1f1f1f; 
+    
+}
+
+/*NAV */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+#selected{
+    opacity: 1;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    
+}
+.navigation li{
+padding-left: 2rem;
+opacity: .5;
+transition: opacity .3s cubic-bezier(.35,.755,.42,.95);
+}
+
+.navigation li:hover{
+opacity: 1;
+cursor: pointer;
+}
+
+
+.logo,video{
+    width: 100vw;
+
+}
+.logo{
+    padding: 0rem 4rem 1rem 4rem;
+
+}
+.hero_section video{
+    padding: 1rem 4rem;
+    
+}
+.quote_section{
+padding-left: 1rem;    
+}
+    .quote_section p{
+    
+        line-height: 1.32;
+        font-size: 1.5rem;
+        padding: 4rem;
+        font-style: italic;
+    }
+.gallery_section{
+    text-align: center;
+    padding: 4rem;
+    width: 100vw;
+}
+.gallery_section img{
+height: 400px;
+margin-top: 180px;
+}
+.gallery_section img:first-child{
+margin-top: 0px !important;
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+
+/*Footer*/
+.footer{
+
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+padding: 2rem 4rem 1rem 4rem;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+}
+.footer p{
+    font-size: 0.8rem;
+    color: #1f1f1f;
+}
+.footer button,input{
+    background-color: none;
+    border-radius: 16px;
+    padding: 0.25rem;
+    border: none;
+    font-size: 0.8rem;
+    
+}
+.footer input{
+    background-color: #f4f4f4;
+}
+.footer button{
+  padding-right: 0.2rem;
+    background: none;
+   opacity: 0.8;
+}
+.footer button:hover{
+cursor: pointer;
+     opacity: 1;
+  }
+.footer input:focus{
+    outline:0;
+   
+}
+.subscribe{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .quote_section {
+        text-align: center;
+        width: 90vw;
+    }
+    .quote_section p{
+        
+        font-size: 1.2rem;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .gallery_section{
+        text-align: center;
+        padding: 0;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .gallery_section img{
+        height: auto;
+        width: 100vw;
+        margin-top: 80px;
+       
+        }
+        .gallery_section img:first-child{
+          width: 80vw;
+            }
+        .left{
+            float: none;
+        }
+        .right{
+            float:none;
+        }
+  }
